@@ -33,7 +33,7 @@ class App extends Component {
             <div className='tc'>
                 <h1 className="f1 ttu green">RobotFriends</h1>
                 <SearchBox searchChange={this.onSearchChange}/>
-                <div style={{ overflowY: 'scroll', border: '5px solid black', height: '500px' }}>
+                <div style={{ overflowY: 'scroll', border: '5px solid black', height: '800px' }}>
                     <ErrorBoundry>
                         <CardList robots={filteredRobots} />
                     </ErrorBoundry>

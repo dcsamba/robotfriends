@@ -1,0 +1,19 @@
+import React, { Fragment } from 'react'
+
+const Card = ({ name, username, id, email }) => {
+   
+    return (
+        <>
+            {/* <h1>RoboFriends</h1> */}
+            <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
+                <img alt={username} src={`https://robohash.org/${id}?200x200`} />
+                <div>
+                    <h2>{name}</h2>
+                    <p>{email}</p>
+                </div>
+            </div>
+        </>
+    );
+}
+
+export default Card;
